@@ -57,9 +57,7 @@
                             <ControlTemplate TargetType="{x:Type GroupItem}">
                                 <Expander x:Name="exp" IsExpanded="True" Background="White" Foreground="Black">
                                     <Expander.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding Name, StringFormat={}Labo {0:D2}}"/>
-                                        </StackPanel>
+                                        <TextBlock Text="{Binding Name, StringFormat={}Labo {0:D2}}"/>
                                     </Expander.Header>
                                     <ItemsPresenter />
                                 </Expander>
