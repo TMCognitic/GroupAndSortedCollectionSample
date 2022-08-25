@@ -58,8 +58,7 @@
                                 <Expander x:Name="exp" IsExpanded="True" Background="White" Foreground="Black">
                                     <Expander.Header>
                                         <StackPanel Orientation="Horizontal">
-                                            <TextBlock Text="{Binding RelativeSource={RelativeSource FindAncestor, AncestorType=DataGrid}, Path=DataContext.GroupTitle}"/>
-                                            <TextBlock Text="{Binding Name, StringFormat={}Labo {0}}"/>
+                                            <TextBlock Text="{Binding Name, StringFormat={}Labo {0:D2}}"/>
                                         </StackPanel>
                                     </Expander.Header>
                                     <ItemsPresenter />
